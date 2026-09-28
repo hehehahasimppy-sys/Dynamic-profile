@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Profile - Kunlanat Wanthana</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="topbar">
+    <h2>Dynamic Profile</h2>
+
+    <div>
+        <button id="themeBtn">🌙 Dark Mode</button>
+        <button id="colorBtn">🎨 เปลี่ยนสี</button>
+    </div>
+</header>
+
+<main class="container">
+
+    <!-- Profile -->
+    <section class="profile-card">
+
+        <div class="profile-main">
+
+            <div class="avatar">KW</div>
+
+            <div class="profile-info">
+
+                <span class="badge">
+                    Front-End Developer
+                </span>
+
+                <h1 id="nameText">
+                    Kunlanat Wanthana
+                </h1>
+
+                <p id="bioText">
+                    นักศึกษาที่สนใจการออกแบบเว็บไซต์
+                    และการพัฒนาเว็บด้วย HTML, CSS และ JavaScript
+                </p>
+
+                <div class="buttons">
+
+                    <button id="editBtn" class="primary-btn">
+                        ✏️ แก้ไขโปรไฟล์
+                    </button>
+
+                    <button id="toggleBtn" class="secondary-btn">
+                        👁️ แสดง/ซ่อนข้อมูล
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="extraInfo" class="extra-info">
+
+            <div>
+                <strong>📍 Location</strong>
+                <span id="locationText">Thailand</span>
+            </div>
+
+            <div>
+                <strong>🎓 Education</strong>
+                <span>Student</span>
+            </div>
+
+            <div>
+                <strong>💻 Experience</strong>
+                <span>Web Development</span>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section class="content-grid">
+
+        <div class="card">
+
+            <div class="card-title">
+
+                <h2>🛠️ Skills</h2>
+
+                <button id="addSkillBtn">
+                    ＋ เพิ่ม
+                </button>
+
+            </div>
+
+            <div id="skills" class="skills">
+
+                <span class="skill">HTML</span>
+                <span class="skill">CSS</span>
+                <span class="skill">JavaScript</span>
+                <span class="skill">Bootstrap</span>
+
+            </div>
+
+        </div>
+
+
+        <!-- Statistics -->
+        <div class="card">
+
+            <h2>📊 สถิติ</h2>
+
+            <div class="stats">
+
+                <div>
+                    <b>25</b>
+                    <span>โปรเจกต์</span>
+                </div>
+
+                <div>
+                    <b>10</b>
+                    <span>ทักษะ</span>
+                </div>
+
+                <div>
+                    <b>100%</b>
+                    <span>ตั้งใจเรียน</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="card">
+
+        <h2>📩 ติดต่อฉัน</h2>
+
+        <p class="muted">
+            กรอกแบบฟอร์มเพื่อส่งข้อความ
+        </p>
+
+        <form id="contactForm">
+
+            <label>ชื่อ</label>
+
+            <input
+                id="contactName"
+                type="text"
+                placeholder="กรอกชื่อของคุณ"
+            >
+
+            <label>อีเมล</label>
+
+            <input
+                id="contactEmail"
+                type="email"
+                placeholder="example@email.com"
+            >
+
+            <label>ข้อความ</label>
+
+            <textarea
+                id="message"
+                rows="4"
+                placeholder="พิมพ์ข้อความ..."
+            ></textarea>
+
+            <button
+                class="primary-btn"
+                type="submit"
+            >
+                📨 ส่งข้อความ
+            </button>
+
+            <p id="contactResult"></p>
+
+        </form>
+
+    </section>
+
+</main>
+
+
+<!-- Edit Profile -->
+<div id="editModal" class="modal hidden">
+
+    <div class="modal-box">
+
+        <button id="closeModal" class="close">
+            ×
+        </button>
+
+        <h2>✏️ แก้ไขโปรไฟล์</h2>
+
+        <label>ชื่อ</label>
+
+        <input id="editName" type="text">
+
+        <label>แนะนำตัว</label>
+
+        <textarea
+            id="editBio"
+            rows="4"
+        ></textarea>
+
+        <label>สถานที่</label>
+
+        <input id="editLocation" type="text">
+
+        <button
+            id="saveProfile"
+            class="primary-btn"
+        >
+            💾 บันทึกข้อมูล
+        </button>
+
+    </div>
+
+</div>
+
+
+<footer>
+    © 2026 Kunlanat Wanthana
+    | DOM & Event Programming
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
